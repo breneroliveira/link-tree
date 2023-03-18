@@ -49,8 +49,8 @@ table {
 
 /* CCS reset above */
 
-main {
-    background-color: #ccc;
+body {
+    background-color: #F5F4A2;
     display: flex;
     position: absolute;
     justify-content: center;
@@ -60,10 +60,45 @@ main {
     flex-direction: column;
 }
 
+main {
+    background-color: #F5F4A2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+}
+
 main a {
-    background-color: #e58080;
-    padding: 5px;
-    border-radius: 0px 7px 7px 7px;
-    margin-top: 10px;
+    color: black;
+    display: flex;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: 'Calibri';
+    width: 330px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 2pt solid black;
+    -webkit-box-shadow: -5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: -5px 5px 0px -1px rgba(0,0,0,1);
+    box-shadow: -5px 5px 0px -1px rgba(0,0,0,1);
+    background-image: linear-gradient(#6AB6E6, #6AB6E6), linear-gradient(#e58080, #e58080);
+    background-size: 0 100%, auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.2s ease-out;
+}
+
+a:hover {
+    color: white;
+    background-size: 100% 100%, auto;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    a {width: 25%;}
 }
